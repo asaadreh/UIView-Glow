@@ -16,7 +16,7 @@ extension UIView {
             return objc_getAssociatedObject(self, &GLOWVIEW_KEY) as? UIView
         }
         set(newGlowView) {
-            objc_setAssociatedObject(self, &GLOWVIEW_KEY, newGlowView!, .OBJC_ASSOCIATION_RETAIN)
+            objc_setAssociatedObject(self, &GLOWVIEW_KEY, newGlowView, .OBJC_ASSOCIATION_RETAIN) // 1
         }
     }
     
